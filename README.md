@@ -1,6 +1,8 @@
-# Getting Started with ASP.NET 5 and DNX
+# Getting Started with ASP.NET Core
 
-This guide is designed to get you started building applications with the latest development versions ASP.NET 5 and DNX. This means nightly builds and potentially broken or unstable packages.
+[![Join the chat at https://gitter.im/aspnet/Home](https://badges.gitter.im/aspnet/Home.svg)](https://gitter.im/aspnet/Home?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+This guide is designed to get you started building applications with the latest development versions ASP.NET Core. This means nightly builds and potentially broken or unstable packages.
 
 If you want a more stable, released, experience then you should go to https://www.asp.net/vnext.
 
@@ -12,7 +14,7 @@ In order to be able to get new builds of the DNX, and switch between them, you n
 
 ## Getting Started on Windows
 
-The easiest way to get started on Windows is to grab the latest preview of Visual Studio 2015, which can be found [here](http://go.microsoft.com/fwlink/?LinkId=521794).
+The easiest way to get started on Windows is to grab the latest version of Visual Studio 2015, which can be found [here](https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx).
 
 Visual Studio will install DNVM for you, so if you open a developer command prompt and type `dnvm` you should get some help text.
 
@@ -40,11 +42,11 @@ where dnvm
 
 ## OS X
 
-See the instructions on the ASP.NET 5 Documentation site: [Installing ASP.NET 5 on Mac OS X](https://docs.asp.net/en/latest/getting-started/installing-on-mac.html)
+See the instructions on the ASP.NET Core Documentation site: [Installing ASP.NET Core on Mac OS X](https://docs.asp.net/en/latest/getting-started/installing-on-mac.html)
 
 ## Linux
 
-See the instructions on the ASP.NET 5 Documentation site: [Installing ASP.NET 5 on Linux](https://docs.asp.net/en/latest/getting-started/installing-on-linux.html)
+See the instructions on the ASP.NET Core Documentation site: [Installing ASP.NET Core on Linux](https://docs.asp.net/en/latest/getting-started/installing-on-linux.html)
 
 # Running an application
 
@@ -62,7 +64,7 @@ You should also be able to run `dnx` and see the help text of the `dnx` command.
 
 ## Running the samples
 
-1. Clone the ASP.NET 5 Home repository: https://github.com/aspnet/home
+1. Clone the ASP.NET Core Home repository: https://github.com/aspnet/home
 2. Change directory to the folder of the sample you want to run
 3. Run ```dnu restore``` to restore the packages required by that sample.
 4. You should see a bunch of output as all the dependencies of the app are downloaded from MyGet.
@@ -85,20 +87,33 @@ We have some useful documentation on the wiki of this Repo. This wiki is a centr
 If you see errors, or want some extra content, then feel free to create an issue or send a pull request (see feedback section below).
 
 ## [ASP.NET/vNext](https://www.asp.net/vnext)
-The vNext page on the ASP.NET site has links to some TechEd videos and articles with some good information about vNext.
+The vNext page on the ASP.NET site has links to some TechEd videos and articles with some good information about ASP.NET Core (formerly known as ASP.NET 5).
+
+## [Roadmap] (https://github.com/aspnet/Home/wiki/Roadmap)
+The schedule and milestone themes for ASP.NET Core.
 
 ## Repos and Projects
 
 These are some of the most common repos:
 
 * [DependencyInjection](https://github.com/aspnet/DependencyInjection) - basic dependency injection infrastructure and default implementation
+* [Docs](https://github.com/aspnet/Docs) - documentation sources for https://docs.asp.net/en/latest/
 * [EntityFramework](https://github.com/aspnet/EntityFramework) - data access technology
 * [Identity](https://github.com/aspnet/Identity) - users and membership system
-* [DNX](https://github.com/aspnet/DNX) - core runtime, project system, loader
 * [MVC](https://github.com/aspnet/Mvc) - MVC framework for web apps and services
-* [SignalR-Server](https://github.com/aspnet/SignalR-Server) - real-time
+* [Razor](https://github.com/aspnet/Razor) - template language and syntax for CSHTML files
+* [Templates](https://github.com/aspnet/Templates) - project templates for Visual Studio
+* [Tooling](https://github.com/aspnet/Tooling) - Visual Studio tooling, editors, and dialogs
 
-A description of all the repos is [here](https://github.com/aspnet/Home/wiki/Repo-List).
+## NuGet feeds and branches
+
+See the [NuGet feeds](https://github.com/aspnet/Home/wiki/NuGet-feeds) wiki page.
+
+## Build tools
+
+This project produces builds using JetBrains TeamCity.
+
+<a href="https://www.jetbrains.com/teamcity/"><img src="https://github.com/aspnet/Home/wiki/images/logo_TeamCity.png"></a>
 
 # Feedback
 
